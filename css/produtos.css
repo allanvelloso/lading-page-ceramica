@@ -1,0 +1,139 @@
+/* Produtos Section */
+.produtos {
+    padding: 80px 0;
+    background-color: #f0f4f8;
+    position: relative;
+}
+
+.produtos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--highlight-color));
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.produto-card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.produto-img {
+    display: none;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.produto-img-1 {
+    background-image: url('../img/tijolo-20x30.jpg');
+}
+
+.produto-img-2 {
+    background-image: url('../img/tijolo-20x20.jpg');
+}
+
+.produto-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    padding: 0 15px;
+    font-size: 1.4rem;
+}
+
+.produto-card p {
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.produto-card .btn-secondary {
+    margin: 0 20px 20px;
+    align-self: flex-start;
+}
+
+.produto-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(90deg, var(--primary-color), var(--cta-hover));
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+.produto-desc {
+    min-height: 50px;
+}
+
+.produto-preco {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.preco-valor {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.preco-unidade {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+.produto-estoque {
+    margin-bottom: 20px;
+}
+
+.estoque-barra {
+    height: 8px;
+    background-color: var(--medium-gray);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.estoque-nivel {
+    height: 100%;
+    background: linear-gradient(90deg, var(--success-color), #2ecc71);
+}
+
+.estoque-texto {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--dark-gray);
+}

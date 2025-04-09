@@ -1,0 +1,81 @@
+/* Comparativo Section */
+.comparativo {
+    padding: 80px 0;
+    background-color: white;
+    position: relative;
+}
+
+.comparativo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--medium-gray), transparent);
+}
+
+.comparativo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.comparativo-card {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparativo-card h3 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.comparativo-card.tijolos h3 {
+    background-color: var(--primary-color);
+}
+
+.comparativo-card ul {
+    padding: 20px;
+}
+
+.comparativo-card li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.comparativo-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.comparativo-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tijolos-img {
+    background-image: url('../img/tijolos-comparativo.jpg');
+}
+
+.blocos-img {
+    background-image: url('../img/blocos-comparativo.jpg');
+}
+
+.comparativo-conclusao {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-top: 30px;
+}

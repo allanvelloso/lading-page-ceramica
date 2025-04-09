@@ -1,0 +1,16 @@
+/* Arquivo principal que importa todos os componentes CSS */
+@import 'reset.css';
+@import 'variables.css';
+@import 'base.css';
+@import 'buttons.css';
+@import 'header.css';
+@import 'hero.css';
+@import 'produtos.css';
+@import 'entrega.css';
+@import 'vantagens.css';
+@import 'comparativo.css';
+@import 'contato.css';
+@import 'forms.css';
+@import 'footer.css';
+@import 'components.css';
+@import 'promo.css';
